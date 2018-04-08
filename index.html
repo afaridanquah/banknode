@@ -182,7 +182,7 @@ Someone from the team will set you up.</p>
 <h3 id="auth">Auth</h3>
 <p>OAuth access tokens also permit client-side API requests. All request sent must contain the access_token.
 Below is a guide on how to get the access token.</p>
-<p>Endpoint: <a href="https://banknode.digitaltermination.com/oauth/token">banknode.digitaltermination.com/oauth/token</a></p>
+<p>Endpoint: <a href="./api/oauth/token">/api/oauth/token</a></p>
 <pre><code class="curl"># CURL
 curl -X POST \
   http://banknode.digital.test/oauth/token \
@@ -198,7 +198,7 @@ curl -X POST \
 </code></pre>
 
 <h3 id="pending-transactions">Pending Transactions</h3>
-<p>Endpoint: <a href="https://banknode.digitaltermination.com/transactions">banknode.digitaltermination.com/transactions</a></p>
+<p>Endpoint: <a href="./api/transactions">/api/transactions</a></p>
 <pre><code class="curl"># CURL
 curl -X GET \
   http://banknode.test/api/transactions \
@@ -207,7 +207,7 @@ curl -X GET \
 </code></pre>
 
 <h3 id="confirm-transactions">Confirm Transactions</h3>
-<p>Endpoint: <a href="https://banknode.digitaltermination.com/transactions/confirmation">banknode.digitaltermination.com/transactions/confirmation</a></p>
+<p>Endpoint: <a href="./api/transactions/confirmation">api/transactions/confirmation</a></p>
 <table>
 <thead>
 <tr>
@@ -233,7 +233,7 @@ curl -X GET \
 </tbody>
 </table>
 <pre><code class="curl">curl -X POST \
-  http://banknode.test/api/transactions/confirmation \
+  api/transactions/confirmation \
   -H 'Accept: application/json' \
   -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRjYjFmN2ZiNDZkMjk4NDdjODBlZjg1MWM2ODc3YjQ3YzdkNzFlYTc5MDQ5YjcyODIwZDEzYWI1YmIxYmU3NmQzNTViY2ZhMTcyZmRlMDBhIn0.eyJhdWQiOiIzIiwianRpIjoiZGNiMWY3ZmI0NmQyOTg0N2M4MGVmODUxYzY4NzdiNDdjN2Q3MWVhNzkwNDliNzI4MjBkMTNhYjViYjFiZTc2ZDM1NWJjZmExNzJmZGUwMGEiLCJpYXQiOjE1MjI5NzMwODAsIm5iZiI6MTUyMjk3MzA4MCwiZXhwIjoxNTU0NTA5MDgwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.RnjFzru25SbXhSdURZtKSZBY_QMd-5JwgGtcYKLYygnrrA0itQzOduQvX9YFpfGma6jebDpE_p5NLxaPsgyQrs8V5JGFV2DX8sfqM1eDZUrIu7ACKympIlgMEFELVsTtA6-s0CvsO_qrwNVyShW6p1PfqzNZNQ0A3yH82ZGl-E_DfXFfemsyBUgWkVrIxpyDfS1Hb7xBw13FSCsAMeVAd-SlDbeGDGQ743tkPVTcr1rZEDaOJFdWxebX77hbTnEwl2KHD19-p_jRWA8YKv2-4xU0rFiknj_p41ZVLaLvqaqeQRKhL9qNdz3IkOqMO4pZaTeZnmsTyoGEYlUWlcRhajYfQ2LEJNnlFMUEyGpJnezNH3ZBQxhkMPLS2QZN6e6Aa0-B2A03zAdrA0Z5w51_1klrR2bq47N9cFaCGp8tvquF5BJh4IbxgOz2alIEivCKI9R0QP8xtMf0RewUGrTPOLZcKVcZLfuez23nAl5wyaz-KkmFFy0YWTaPfBpsqtP_xIE5-3fo9gc2aY8edYNGQRdFOfIXXvo1e9msbzIONfpflEHz8O00Krt4IhfrVWZTiYPh3LBYp1m18Mhk7SU8M6G5zuXiEs1_SNJVVHkY3ZBPkZ3nVr6qY0lQOfsRxLPIfxkBZ-9r39MaknXfF-rr6SPgiBq9aMN_QtlPpfwIQIQ' \
   -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
@@ -280,5 +280,5 @@ curl -X GET \
 
 <!--
 MkDocs version : 0.17.1
-Build Date UTC : 2018-04-06 04:06:33
+Build Date UTC : 2018-04-08 17:47:09
 -->
